@@ -63,8 +63,17 @@
           </case>
           <case n="'graphic'">
             <div class="graphic">
+              <if condition="item.value.asset === 'contribution-alluvial-distributions.html'">
+                <include src="contribution-alluvial-distributions.html"></include>
+              </if>
               <if condition="item.value.asset === 'graphic-name.html'">
                 <include src="graphic-name.html"></include>
+              </if>
+              <if condition="item.value.asset === 'contribution-box-plot.html'">
+                <include src="contribution-box-plot.html"></include>
+              </if>
+              <if condition="item.value.asset === 'contribution-totals-by-bucket.html'">
+                <include src="contribution-totals-by-bucket.html"></include>
               </if>
             </div>
           </case>
